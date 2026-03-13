@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Clipboard Manager",
+  "version": "1.0.0",
+  "description": "智能粘贴板，管理代码片段和命令",
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "打开 Clipboard Manager"
+    },
+    "copy-last-item": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "复制最近添加/使用的片段"
+    }
+  },
+  
+  "permissions": ["clipboardWrite", "storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
